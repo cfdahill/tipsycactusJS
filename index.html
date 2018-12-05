@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./assets/javascript/firebase.js"></script>
+    <script src="./assets/javascript/randombeer.js"></script>
+    <title>Tipsy Cactus</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/tipsyLogo.png" alt="Tipsy Cactus logo">
+        Insert navbar here
+    </header>
+    <div class="happy-hour">
+        <h1>Happy Hour</h1>
+        <p>Every day, 2PM - 7PM</p>
+        <p>$2 off all beers except the beers of the month</p>
+    </div>
+
+    <div>
+        <h1>Beer List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Beer</th>
+                    <th>Brewery</th>
+                    <th>Style</th>
+                    <th>ABV</th>
+                    <th>Ounces</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody class="beerlist"></tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Random Beer!</h2>
+        <p>Don't know what to drink?  Try a random beer!</p>
+        <button id="random">Random Beer</button>
+        <span id="randomBeer"></span>
+    </div>
+</body>
+
+</html>

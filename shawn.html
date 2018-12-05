@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/javascript/firebase.js"></script>
+    <title>Tipsy Cactus Employees</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/images/tipsyLogo.png" alt="Tipsy Cactus logo">
+        Insert navbar here
+    </header>
+    <div>
+        <h1>Edit beer list</h1>
+        <table>
+            <thead>
+                <tr id=beerForm>
+                    <form>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="beer" value="Beer name"></input>
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="brewery" value="Brewery"></input>
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="style" value="Style"></input>
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="abv" value="ABV"></input>
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="ounces" value="Ounces"></input>
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="price" value="Price"></input>
+                        </th>
+                        <th>
+                            <button type="submit" id="save">Save</button>
+                        </th>
+                    </form>
+                </tr>
+            </thead>
+            <tbody id="editable-beer-list" class="beerlist"></tbody>
+        </table>
+    </div>
+</body>
+
+</html>
