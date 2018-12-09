@@ -17,10 +17,11 @@ let beerInfo = {
   style: "",
   abv: 0.0,
   ounces: 0,
-  price: ""
+  price: "",
+  botm: ""
 };
 let number = 0;
-const taps = 3;
+const taps = 9;
 //make this equal to number of taps
 
 $(document).ready(function () {
@@ -39,7 +40,8 @@ $(document).ready(function () {
       item.style + "</td><td>" +
       item.abv + "</td><td>" +
       item.ounces + "</td><td>" +
-      item.price + "</td>" +
+      item.price + "</td><td>" +
+      item.botm + "</td>" +
       deleteButton + "</tr>");
 
     number++;
@@ -60,9 +62,24 @@ $(document).ready(function () {
     beerInfo.abv = $("#abv").val().trim();
     beerInfo.ounces = $("#ounces").val().trim();
     beerInfo.price = $("#price").val().trim();
-    database.ref().push({
-      beerInfo
-    });
+    
+    if($("#botm").is(':checked')) {
+      beerInfo.botm="X";
+      $("#botm").not(':checked');
+    }
+    
+    database.ref()
+      .push({ beerInfo })
+      .then(
+        beerInfo = {
+          beerName: "",
+          brewery: "",
+          style: "",
+          abv: 0.0,
+          ounces: 0,
+          price: "",
+          botm: ""
+      });
   });
 
   //delete row
