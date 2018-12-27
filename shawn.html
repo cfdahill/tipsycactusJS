@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" media="all"
+        href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.10.0/jquery.timepicker.min.js"></script>
     <script src="./assets/javascript/firebase.js"></script>
     <title>Tipsy Cactus Employees</title>
 </head>
@@ -51,6 +56,35 @@
             </thead>
             <tbody id="editable-beer-list" class="beerlist"></tbody>
         </table>
+    </div>
+
+    <div>
+        <h1>Edit calendar</h1>
+        <table>
+            <thead>
+                <tr id=calendarForm>
+                    <form>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="event-title" value="Event title"></input>
+                        </th>
+                        <th>
+                            <input type="text" id="datepicker">
+                        </th>
+                        <th>
+                            <input type="text" id="timepicker">
+                        </th>
+                        <th>
+                            <input type="text" onfocus="this.value=''" id="event-desc" value="Event description"></input>
+                        </th>
+                        <th>
+                            <button type="submit" id="save-event">Save</button>
+                        </th>
+                    </form>
+                </tr>
+            </thead>
+            <tbody id="editable-event-list" class="eventlist"></tbody>
+        </table>
+        <button>Delete all events before this month</button>
     </div>
 </body>
 

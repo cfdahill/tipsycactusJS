@@ -1,3 +1,51 @@
 body {
     font-family: 'Barlow Condensed', sans-serif;
 }
+
+header {
+    width: 100vw;
+    background-color: #804747;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.happy-hour {
+    background-image: url('../images/barGlasses.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* padding: 5%; */
+    text-align: center;
+    color: #000000;
+}
+
+.happy-hour:last-child {
+        padding: 0px 1em 1em;
+}
+
+h1 {
+        font-size: 45px;
+        padding-top: 5px;
+}
+
+p {
+    font-size: 28px;
+    margin: 0em;
+    font-weight: bold;
+}
+
+.beer-list {
+    background-color: #804747
+}
+.random-beer {
+    background-color: #804747
+}
+
+tr {
+    height: 24px;
+}
+
+td {
+    width: 15vw;
+}
