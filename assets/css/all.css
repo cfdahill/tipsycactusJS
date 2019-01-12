@@ -1,5 +1,10 @@
+/* for all pages */
 body {
     font-family: 'Barlow Condensed', sans-serif;
+}
+
+div {
+    padding: 5px;
 }
 
 header {
@@ -7,45 +12,116 @@ header {
     background-color: #804747;
 }
 
-.logo {
-    margin: 10px;
-}
-
-.happy-hour {
-    background-image: url('../images/barGlasses.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    /* padding: 5%; */
-    text-align: center;
-    color: #000000;
-}
-
-.happy-hour:last-child {
-        padding: 0px 1em 1em;
-}
-
 h1 {
-        font-size: 45px;
-        padding-top: 5px;
+    font-size: 45px;
+    padding-top: 5px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-top: 5px;
 }
 
 p {
     font-size: 28px;
     margin: 0em;
-    font-weight: bold;
 }
 
-.beer-list {
-    background-color: #804747
+span {
+    font-size: 18px;
+    color: ivory;
 }
-.random-beer {
-    background-color: #804747
+
+button {
+    border-radius: 30px;
+    padding: 5px;
+    background: ivory;
+    font-size: 18px;
+    padding-top: 5px;
+    margin: 5px;
+    border: 2px solid #b5b074;
+}
+
+table {
+    text-align: center;
+    overflow-x: auto;
+    max-width: 90vw;
 }
 
 tr {
     height: 24px;
+    background-color: whitesmoke;
+}
+
+tr:nth-child(even) {
+    background-color: lightslategray;
 }
 
 td {
-    width: 15vw;
+    border-left: solid black 1px;
+    padding:3px;
+    vertical-align: middle;
+}
+
+th {
+    border-left: solid black 1px;
+    border-bottom: solid black 1px;
+    vertical-align: middle;
+}
+
+footer {
+    background: lightslategray;
+    color: ivory;
+}
+
+/* navbar */
+.logo {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.navbar a img {
+    vertical-align: top;
+    height: 85px;
+    padding-right: 20px;
+    margin: -30px 0 -25px;
+}
+
+.navbar-collapse ul {
+    padding-top: 15px;
+}
+
+.fixed-top {
+    top: 15px;
+    right: 35px;
+}
+
+/* for index.html */
+.happy-hour {
+    background-image: url('../images/barGlasses.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    color: #000000;
+}
+
+.happy-hour p {
+    font-weight: bold;
+}
+
+.happy-hour:last-child {
+    padding: 0px 1em 1em;
+}
+
+.beer-list {
+    background-color: #804747;
+}
+
+.random-beer {
+    background-color: #804747
+}
+
+@media(max-width: 670px) {
+
 }

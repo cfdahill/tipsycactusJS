@@ -122,7 +122,7 @@ $(document).ready(function () {
       item.eventName + "</td><td>" +
       item.eventDate + "</td><td>" +
       item.eventTime + "</td><td>" +
-      item.eventDesc + "</td><td>" +
+      item.eventDesc + "</td>" +
       deleteButton + "</tr>");
   }
 
